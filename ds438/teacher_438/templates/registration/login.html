@@ -1,0 +1,33 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script type="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row"> <div class="col-md-6"> <div class="card">
+        <form class="box"  method="post">
+        {% csrf_token %}
+        <h1>Вход на сайт</h1>
+        <p class="text-muted"> Введите ваш логин и пароль!</p>
+        <input type="text" name="username" placeholder="Имя пользователя">
+        <input type="password" name="password" placeholder="Пароль"> <a class="forgot text-muted" href="#">Забыли пароль?</a>
+        <input type="submit" name="" value="Войти" href="{% url teacher_438:profile %} > <div class="col-md-12">
+            <ul class="social-network social-circle"></ul>
+            </div>
+
+        </form>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
