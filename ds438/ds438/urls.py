@@ -18,9 +18,10 @@ import django.contrib.auth
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("teacher_438/", include("teacher_438.urls")),
     path('accounts/', include("django.contrib.auth.urls")),
-    # path('registration/', include("teacher_438.urls")),
+
 ]
